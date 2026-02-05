@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Onyx Music - Paylaşım</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body { background: #090E17; color: white; font-family: sans-serif; display: flex; align-items: center; justify-content: center; height: 100vh; margin: 0; text-align: center; }
+        .btn { background: #00FFA3; color: black; padding: 15px 30px; border-radius: 30px; text-decoration: none; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div>
+        <h2>Onyx Music</h2>
+        <p>Liste yükleniyor...</p>
+        <br><br>
+        <a id="open-btn" class="btn" href="#">Uygulamayı Aç</a>
+    </div>
+
+    <script>
+        // Linkten gelen veriyi alıyoruz (?d=... kısmı)
+        const urlParams = new URLSearchParams(window.location.search);
+        const data = urlParams.get('d');
+
+        if (data) {
+            // UYGULAMAYA FIRLATAN SİHİRLİ KOMUT
+            // Android'e diyoruz ki: "onyxmusic://" protokolünü aç ve bu datayı götür.
+            const appUrl = "onyxmusic://share?d=" + data;
+            
+            // 1. Otomatik yönlendirmeyi dene
+            window.location.href = appUrl;
+
+            // 2. Eğer otomatik açılmazsa butona basınca açılması için linki ayarla
+            document.getElementById('open-btn').href = appUrl;
+        } else {
+            document.body.innerHTML = "<h2>Hatalı Link</h2>";
+        }
+    </script>
+</body>
+</html>
