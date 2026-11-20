@@ -1,5 +1,64 @@
-
 {
   "latest_version": "1.3.0",
-  "play_store_url": "https://play.google.com/store/apps/details?id=com.onyx.music"
+  "play_store_url": "https://play.google.com/store/apps/details?id=com.onyx.music",
+  "announcement": {
+    "active": false,
+    "url": "https://play.google.com/store/apps/details?id=com.onyx.music",
+    "title": {
+      "tr": "Duyuru",
+      "en": "Announcement",
+      "de": "Mitteilung",
+      "fr": "Annonce",
+      "es": "Aviso",
+      "it": "Avviso",
+      "pt": "Aviso",
+      "ru": "Объявление",
+      "ar": "إعلان",
+      "ja": "お知らせ",
+      "zh": "公告",
+      "hi": "सूचना"
+    },
+    "message": {
+      "tr": "Buraya duyuru metni gelecek.",
+      "en": "Announcement text goes here.",
+      "de": "Hier steht der Text der Mitteilung.",
+      "fr": "Le texte de l'annonce sera ici.",
+      "es": "Aquí irá el texto del aviso.",
+      "it": "Qui andrà il testo dell'avviso.",
+      "pt": "Aqui vai o texto do aviso.",
+      "ru": "Здесь будет текст объявления.",
+      "ar": "سيظهر نص الإعلان هنا.",
+      "ja": "ここにお知らせの本文が入ります。",
+      "zh": "这里是公告内容。",
+      "hi": "यहाँ सूचना का संदेश होगा।"
+    },
+    "button": {
+      "tr": "Aç",
+      "en": "Open",
+      "de": "Öffnen",
+      "fr": "Ouvrir",
+      "es": "Abrir",
+      "it": "Apri",
+      "pt": "Abrir",
+      "ru": "Открыть",
+      "ar": "فتح",
+      "ja": "開く",
+      "zh": "打开",
+      "hi": "खोलें"
+    },
+    "close": {
+      "tr": "Kapat",
+      "en": "Close",
+      "de": "Schließen",
+      "fr": "Fermer",
+      "es": "Cerrar",
+      "it": "Chiudi",
+      "pt": "Fechar",
+      "ru": "Закрыть",
+      "ar": "إغلاق",
+      "ja": "閉じる",
+      "zh": "关闭",
+      "hi": "बंद करें"
+    }
+  }
 }
